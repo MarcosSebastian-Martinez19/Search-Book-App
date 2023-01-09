@@ -11,7 +11,7 @@ const Header = () => {
         <div className="header-content flex flex-c text-center text-white">
           <h2 className="header-title text-capitalize">find your book of choice.</h2><br />
           <p className="header-text fs-18 fw-3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat aut, dolorem ullam unde dolorum qui est molestias quae et sit voluptates ipsam. Alias dolor ullam libero enim saepe, adipisci omnis aliquid iusto veniam amet in a aut animi.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat aut, dolorem ullam unde dolorum qui est molestias quae et sit voluptates ipsam. Alias dolor ullam libero.
           </p>
           <SearchForm />
         </div>
@@ -20,4 +20,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Header;

@@ -2,8 +2,7 @@ import React from 'react';
 import { useGlobalContext } from "../../context.js"
 import Book from "../BookList/Book.jsx"
 import Loading from "../Loader/Loader.jsx"
-// import coverImg from "../../Images/cover_not_found.jpg"
-import coverImg from "../../Images/library-img.jpeg"
+import coverImg from "../../Images/cover_not_found.jpg"
 import "./BookList.css"
 
 const BookList = () => {
@@ -17,25 +16,23 @@ const BookList = () => {
     }
   });
 
-  console.log(booksWithCovers);
-
   if(loading) return <Loading />;
 
   return (
-    <section className="booklist">
-      <div className="container">
-        <div className="section-title">
+    <section className='booklist'>
+      <div className='container'>
+        <div className='section-title'>
           <h2>{resultTitle}</h2>
         </div>
-<div className="booklist-content grid">
-  {
-    booksWithCovers.slice(0, 30).map((item, index) => {
-      return (
-        <Book key={index} {...item} />
-      )
-    })
-  }
-</div>
+        <div className='booklist-content grid'>
+          {
+            booksWithCovers.slice(0, 30).map((item, index) => {
+              return (
+                <Book key = {index} {...item} />
+              )
+            })
+          }
+        </div>
       </div>
     </section>
   )

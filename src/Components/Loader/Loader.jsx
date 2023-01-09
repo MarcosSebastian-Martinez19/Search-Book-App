@@ -1,11 +1,11 @@
 import React from 'react';
-import { ImSpinner9 } from "react-icons/im"
+import LoaderImg from "../../Images/loader.svg"
 import "./Loader.css"
 
 const Loader = () => {
   return (
     <div className="loader flex flex-c">
-      <ImSpinner9 className='loader-icon' />
+      <img src={LoaderImg} alt="loader" />
     </div>
   )
 }
